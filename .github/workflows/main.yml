@@ -6,17 +6,18 @@ on:
     branches: [master]
 jobs:
   test:
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
-        uses: actions/stepup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-          run: 
-            npm install
-            npm test
+      - name: npm install, and test
+        run: 
+          npm install
+          npm test
           
     
      
