@@ -1,11 +1,11 @@
 //dhawdawd
 function sum (a, b){
-    // if (typeof(a) != "number" || typeof (b) != "number" ) {
-    //    throw Error("input need to be number")
+    if (typeof(a) != "number" || typeof (b) != "number" ) {
+       throw Error("input need to be number")
 
-    // }else {
+    }else {
         return a + b
-    // }
+    }
 
 
 }
