@@ -2,12 +2,12 @@ name: Javascript CI Testing
 on:
   push:
     branches: [master]
-  pull_request:
+  pull_request: 
     branches: [master]
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
@@ -15,6 +15,6 @@ jobs:
         with:
           node-version: "12.x"
       - name: npm install, and test
-        run: 
+        run: |
           npm install
           npm test
