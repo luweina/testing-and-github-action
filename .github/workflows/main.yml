@@ -12,6 +12,7 @@ jobs:
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
+              hallee/eslint-action@1.0.1
         with:
           node-version: "12.x"
       - name: npm install, and test
@@ -19,6 +20,4 @@ jobs:
           npm install
           npm test
                  
-      - name: ESLint Action
-        uses: hallee/eslint-action@1.0.1
 
